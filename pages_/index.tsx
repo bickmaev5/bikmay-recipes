@@ -15,7 +15,7 @@ type Data = {
 function Home () {
     const { data, error } = useSWR<any>(`
         {
-            recipes(order_by: {created_at: asc}) {
+            recipes(order_by: {created_at: desc}) {
                 id
                 name
                 imageUrl
@@ -28,6 +28,8 @@ function Home () {
     return (
         <div>
             <p>{t('home:title')}</p>
+            <Link href="/add" lang={lang}>{t('home:add')}</Link>
+            <br/>
             <Link href="/" lang={lang === 'en' ? 'ru' : 'en'}>{lang !== 'en' ? 'Английский' : 'Russian'}</Link>
             <div>
                 {!data ? (
@@ -35,7 +37,10 @@ function Home () {
                 ) : (
                     <>
                         {data.recipes.map((recipe: RecipeInterface) => (
-                            <div>{recipe.name}</div>
+                            <>
+                                <img src={recipe.imageUrl} />
+                                <div>{recipe.name}</div>
+                            </>
                         ))}
                     </>
                 )}
