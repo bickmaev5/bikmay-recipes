@@ -8,8 +8,12 @@ import Link from 'next-translate/Link';
 const API = "https://bikmay-recipes.herokuapp.com/v1/graphql";
 const fetcher = query => request(API, query);
 
+type Data = {
+    recipes: RecipeInterface[]
+}
+
 function Home () {
-    const { data, error } = useSWR(`
+    const { data, error } = useSWR<any>(`
         {
             recipes(order_by: {created_at: asc}) {
                 id
