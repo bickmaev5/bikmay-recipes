@@ -12,6 +12,7 @@
     "final-form": "^4.19.1",
     "graphql-request": "^1.8.2",
     "next": "^9.4.0",
+    "next-pwa": "^2.4.1",
     "next-translate": "^0.15.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

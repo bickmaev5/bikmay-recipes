@@ -31,7 +31,11 @@ function Add () {
 
     return (
         <div>
-            <Link href="/">{t('add:back')}</Link>
+            <Link href="/">
+                <a>
+                    {t('add:back')}
+                </a>
+            </Link>
             <Form
                 onSubmit={onSubmit}
                 render={({ handleSubmit }) => (

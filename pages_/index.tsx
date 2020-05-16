@@ -28,9 +28,17 @@ function Home () {
     return (
         <div>
             <p>{t('home:title')}</p>
-            <Link href="/add" lang={lang}>{t('home:add')}</Link>
+            <Link href="/add" lang={lang}>
+                <a>
+                    {t('home:add')}
+                </a>
+            </Link>
             <br/>
-            <Link href="/" lang={lang === 'en' ? 'ru' : 'en'}>{lang !== 'en' ? 'Английский' : 'Russian'}</Link>
+            <Link href="/" lang={lang === 'en' ? 'ru' : 'en'}>
+                <a>
+                    {lang !== 'en' ? 'Английский' : 'Russian'}
+                </a>
+            </Link>
             <div>
                 {!data ? (
                     <p>{t('common:loading')}</p>
