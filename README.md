@@ -1,2 +1,2 @@
 # bikmay-recipes
-demo: <a href="https://bikmay-recipes-r3o85hc3u.now.sh/" target="_blank">demo on vercal</a>
+demo: <a href="https://bikmay-recipes.now.sh/" target="_blank">demo on vercel</a>
