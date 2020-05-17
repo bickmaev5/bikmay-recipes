@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import '../css/antd.less';
 
 function App ({ Component, pageProps }) {
 
