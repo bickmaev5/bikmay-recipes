@@ -6,13 +6,8 @@ import { Layout, Typography, List } from 'antd';
 
 const { Content } = Layout;
 
-import dynamic from 'next/dynamic';
-
-// import Nav from 'components/Nav';
-
-const Nav = dynamic(() => import('components/Nav'));
-const RecipeCard = dynamic(() => import('components/RecipeCard'));
-
+import Nav from 'components/Nav';
+import RecipeCard from 'components/RecipeCard';
 
 
 const API = "https://bikmay-recipes.herokuapp.com/v1/graphql";
@@ -58,7 +53,7 @@ function Home () {
     return (
         <Layout className="layout">
             <Nav/>
-            <Content style={{ padding: '0 50px 50px' }}>
+            <Content style={{ padding: '0 20px 50px' }}>
                 <Typography.Title style={{ textAlign: 'center'}}>
                     {t('home:title')}
                 </Typography.Title>

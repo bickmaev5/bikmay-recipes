@@ -13,9 +13,6 @@ const RecipeCard: React.FunctionComponent<RecipeCardProps> = ({ isLoading, item 
             cover={!isLoading ? (<img style={{maxHeight: '200px', objectFit: 'cover'}} src={item.imageUrl} />)
                 : <div style={{width: '100%', height: '200px', backgroundColor: '#d8d8d8'}}></div>}
             hoverable
-            style={{
-                margin: '20px 0',
-            }}
         >
             <Skeleton
                 loading={isLoading}

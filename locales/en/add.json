@@ -4,5 +4,7 @@
     "instruction": "Instructions",
     "imageUrl": "Link to image ",
     "instructionUrl": "Link to recipe",
-    "back": "Back"
+    "back": "Back",
+    "title": "Add recipe",
+    "field-required": "Field is required!"
 }
