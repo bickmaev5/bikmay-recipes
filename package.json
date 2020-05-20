@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next-translate && next",
     "build": "next-translate && next build",
-    "start": "next start"
+    "start": "next start",
+    "type-check": "tsc --watch"
   },
   "dependencies": {
     "@ant-design/icons": "^4.1.0",

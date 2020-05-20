@@ -24,7 +24,7 @@ const layout = {
     wrapperCol: { span: 16 },
 };
 
-function Add () {
+const Add: React.FunctionComponent = () => {
 
     const [isLoading, setLoading] = useState<boolean>(false);
 
