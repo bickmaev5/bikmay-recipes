@@ -5,6 +5,7 @@ import request from 'graphql-request';
 import { Layout, PageHeader, Typography, Skeleton, Divider, Button } from 'antd';
 import Router from 'next-translate/Router';
 
+
 const API = "https://bikmay-recipes.herokuapp.com/v1/graphql";
 const fetcher = (query, id): Promise<DataType> => request(API, query, id);
 
