@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card, Skeleton } from 'antd';
 import Link from 'next-translate/Link';
 
