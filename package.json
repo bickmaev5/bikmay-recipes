@@ -23,7 +23,7 @@
     "next": "^9.4.0",
     "next-pwa": "^2.4.1",
     "next-translate": "^0.15.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-testing-library": "^8.0.1",
