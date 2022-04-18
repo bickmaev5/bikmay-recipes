@@ -12,6 +12,7 @@ function App ({ Component, pageProps }) {
                 <meta name='description' content='Description' />
                 <meta name='keywords' content='Keywords' />
                 <title>Recipes</title>
+                <script src="https://telegram.org/js/telegram-web-app.js"></script>
                 <link rel="manifest" href="/manifest.json" />
                 <link href='/icons/favicon-16x16.png' rel='icon' type='image/png' sizes='16x16' />
                 <link href='/icons/favicon-32x32.png' rel='icon' type='image/png' sizes='32x32' />
